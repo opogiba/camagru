@@ -1,0 +1,245 @@
+.work_body_cam {
+    width: 940px;
+    margin: auto;
+    background-color: rgba(250,250,250,0.76);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    /*margin-top: 10px;*/
+}
+#camera {position: relative}
+
+#canvas {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    width: 640px;
+    height: 640px;
+}
+
+.main_cam {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#new-photo {
+    height: 640px;
+    width: 31%;
+    background-color: rgba(0,0,0,0.01);
+    -webkit-box-shadow: 0 0 1px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 1px 0 rgba(0,0,0,.4);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.4);
+}
+.filters {
+    width: 100%;
+    height: 160px;
+    background-color: rgba(0,0,0,0.01);
+    -webkit-box-shadow: 0 0 1px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 1px 0 rgba(0,0,0,.4);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.4);
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.filter {
+
+    height: 140px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.filter > img {
+
+    height: inherit;
+}
+.buttons-cam {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.btn-cam {
+    background-color: rgb(70, 168, 185);;
+    /*width: 100%;*/
+    height: 40px;
+    line-height: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    text-transform: uppercase;
+    width: 225px;
+    color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.29, 0.98);
+    transition-delay: initial;
+    cursor: pointer;
+}
+.btn-cam:hover {
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.4);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.4);
+
+}
+.btn-cam:active {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
+}
+.mobile-btn {
+    display: none;
+}
+.size_of_mask {
+    z-index: 2;
+    right: 8px;
+    position: absolute;
+}
+.button_size {
+    color: gray;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1344px ) {
+    .btn-cam{width: 200px;}
+
+    /*.work_body_cam {*/
+        /*width: 85%;*/
+    /*}*/
+    /*.main_cam {*/
+        /*width: 100%;*/
+    /*}*/
+    /*#camera {*/
+        /*width: 65%;*/
+    /*}*/
+    /*#canvas {*/
+        /*width: 100%;*/
+
+    /*}*/
+    /*#new-photo {*/
+        /*height: 640px;*/
+        /*width: 34%;  ;*/
+    /*}*/
+    /*.work_body_cam {*/
+        /*width: 85%;*/
+    /*}*/
+    /*.main_cam {*/
+        /*width: 100%;*/
+    /*}*/
+    /*#camera {*/
+        /*width: 100%;*/
+        /*display: flex;*/
+        /*height: inherit;*/
+        /*justify-content: center;*/
+    /*}*/
+    /*#canvas {*/
+        /*width: 90%;*/
+        /*height: 100%;*/
+
+    /*}*/
+    /*#new-photo {*/
+        /*display: none;*/
+    /*}*/
+}
+
+@media screen and (max-width: 1100px ) {
+
+    .work_body_cam {
+        width: 85%;
+    }
+    .main_cam {
+    width: 100%;
+        flex-direction: column;
+    }
+    #camera {
+    width: 100%;
+    }
+    #canvas {
+    width: 100%;
+    height: 100%;
+
+    }
+    #new-photo {
+    width: 100%;
+        display: none;
+    }
+    .mobile-btn {
+        display: flex;
+        margin-bottom: -8px;
+    }
+    .comp {
+        display: none;
+    }
+    .filters {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 992px ) {
+    .work_body_cam {
+        width: 85%;
+    }
+    .btn-cam {
+        width: 24%;
+    }
+    .filters {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: inherit;
+        margin-bottom: 10px;
+    }
+    .filter {
+
+       height: 18vw;
+        padding: 10px;
+
+    }
+    .filter > img {
+        display: block;
+        margin: auto;
+        height: 100%;
+    }
+    .size_of_mask {
+
+        right: 10px;
+
+
+
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px){
+    .work_body_cam {
+        width: 90%;
+    }
+    .size_of_mask {
+        right: 15px;
+    }
+    .btn-cam {
+        width: 24%;
+        font-size: 0.8em;
+    }
+
+}
+@media screen and (max-width: 560px){
+    .filter {
+
+        height: 20vw;
+
+    }
+}

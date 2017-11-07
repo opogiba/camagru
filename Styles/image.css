@@ -1,0 +1,235 @@
+.work_body_photo {
+    width: 944px;
+    margin: auto;
+    padding-top: 10px;
+}
+._photo {
+    width: 100%;
+    /*margin: 0.8% 0;*/
+    position: relative;
+    margin: auto;
+    margin-bottom: 8px;
+
+}
+
+.work_body_photo img {
+
+    width: 100%;
+    /*border: solid 1px rgba(202,201,198,0.8);*/
+    /*border-top: 0;*/
+}
+#_photo_header {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+
+    /*border: solid 1px rgba(202,201,198,0.8);*/
+    /*border-bottom: 0;*/
+}
+
+#_photo_header_avatar {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-left: 20px;
+
+
+}
+._text_area {
+    width: 93%;
+    margin-left: 3px;
+}
+
+#submit_coment {
+    display: block;
+    margin-right: 10px;
+    height: 30px;
+    margin-top: 1px;
+    font-size: 24px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+
+
+
+#_photo_header_avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#_photo_owner_login {
+
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(18,21,17,0.76);
+
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
+._photo_num_like_comment {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+._photo_text_num_like {
+    text-align: center;
+    /*color: floralwhite;*/
+
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 23px;
+}
+._photo_text_num_like i {
+    padding: 0 10px;
+}
+
+
+
+._photo_comment {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    /*border: solid 1px rgba(202,201,198,0.8);*/
+    /*border-bottom: 0;*/
+}
+
+._photo_comment a {
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    margin-right: 15px;
+    margin-left: 3px;
+
+    font-size: 19px;
+
+    border: 0;
+    text-decoration: none;
+    /*color: inherit;*/
+    font-family: 'Raleway', sans-serif;
+    color: rgba(18,21,17,0.76);
+
+}
+
+.user_coment{
+
+    height: inherit;
+    margin-right: 15px;
+
+    font-size: 18px;
+
+    border: 0;
+    text-decoration: none;
+    /*color: inherit;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+
+#_photo_write_comment {
+    resize: none;
+    width: 100%;
+    overflow: auto;
+    margin-left: 3px;
+    font-size: 19px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    margin-right: 15px;
+    /*cursor: none;*/
+}
+
+
+
+@media screen and (max-width: 1344px ) {
+
+    .work_body_photo {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 992px ) {
+    .work_body_photo {
+        width: 85%;
+    }
+    /*.foto_main {*/
+        /*width: 48%;*/
+        /*margin-bottom: 8px;*/
+        /*!*margin: 0.8% 0;*!*/
+    /*}*/
+
+}
+@media screen and (max-width: 600px){
+    .work_body_photo {
+        width: 100%;
+    }
+
+    ._photo_comment a {
+        margin-right: 5px;
+        margin-left: 4px;
+        font-size: 14px;
+    }
+
+    .user_coment{
+
+
+        margin-right: 7px;
+        font-size: 13px;
+
+    }
+    ._photo_comment {
+        margin-bottom: 0;
+        width: 95%;
+        /*border: solid 1px rgba(202,201,198,0.8);*/
+        /*border-bottom: 0;*/
+    }
+    ._photo {
+        margin-bottom: 0;
+    }
+    ._photo_text_num_like {
+        font-size: 17px;
+    }
+    ._text_area {
+        width: 96%;
+        margin-left: 3%;
+    }
+    #_photo_write_comment {
+        font-size: 14px;
+    }
+
+    ._text_area {
+        width: 88%;
+        margin-top: 3px;
+    }
+
+    #submit_coment {
+        display: block;
+        margin-right: 10px;
+        height: 25px;
+        margin-top: 1px;
+        font-size: 18px;
+    }
+
+
+
+    /*.foto_main {*/
+        /*width: 100%;*/
+        /*!*margin: 0.8% 0;*!*/
+    /*}*/
+
+}

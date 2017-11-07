@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/cam.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/profile.css">
+    <link rel="stylesheet" href="Styles/image.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body >
+<header style="border-bottom: solid 1px rgba(202,201,198,0.8)">
+
+    <div class="all-header">
+        <button id="open-bar" onclick="sidebar_open()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+        <div class="work-header">
+            <div class="min-menu" id="side-bar">
+                <button id="close-bar" onclick="sidebar_close()" ><i class="fa fa-times fa-lg" aria-hidden="true"></i> </button>
+                <div id="user_avatar">
+                    <img src="img/1426860C.jpg">
+                </div>
+                <span id="name-side-bar"> Alex Pogiba</span>
+                <a href="index.php" class="icon"><i class="material-icons">apps</i>Home</a>
+                <a href="profile.php" class="icon"><i class="material-icons">person_outline</i>Profile</a>
+                <a href="cam.php" class="icon"><i class="material-icons">add_circle_outline</i>Take photo</a>
+                <a href="#" class="icon"><i class="material-icons">forward</i>Log Out</a>
+            </div>
+            <div class="logo">
+                <img src="img/full-logo-no-neck.png">
+            </div>
+            <div>
+                <div class="menu">
+                    <a href="index.php" class="icon"><i class="material-icons">apps</i>Home</a>
+                    <a href="profile.php" class="icon"><i class="material-icons">person_outline</i>Profile</a>
+                    <a href="cam.php" class="icon"><i class="material-icons">add_circle_outline</i>Take photo</a>
+                    <!--<a href="#" class="login2">LOGIN</a>-->
+                </div>
+            </div>
+            <div id="close-bar2" onclick="sidebar_close()"></div>
+        </div>
+    </div>
+</header>
+<script src="Javsscript/sidebar.js"></script>
+
+
+
+<!--<button id="close-bar" onclick="sidebar_close()" ><i class="fa fa-bars fa-lg" aria-hidden="true"></i> </button>-->
